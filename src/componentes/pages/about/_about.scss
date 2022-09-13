@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 }
 
 .div-about p {
@@ -32,6 +33,7 @@
     font-size: calc(0.6rem + 1.2vw) !important;
     padding: 1.5rem;
     text-align: left;
+    
 }
 .container-about h1 {
     color: rgba(255, 255, 255, 0.237);

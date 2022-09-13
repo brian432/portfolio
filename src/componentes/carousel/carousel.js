@@ -19,7 +19,7 @@ export const Carousel = () => {
             <div
                 className='glitch-img div-absolute'
                 style={{
-                    backgroundImage: `url(images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)`,
+                    backgroundImage: `url(/images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)`,
                     display: button ? "none" : "block"
                 }}
             >
@@ -44,7 +44,7 @@ export const Carousel = () => {
                                 delay: imageRotation === "" ? 0 : `0.${img}`
                             }
                         }}
-                        style={{ backgroundImage: `url(images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)` }}
+                        style={{ backgroundImage: `url(/images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)` }}
                         className={`img${index} div-absolute`}
                     >
                     </motion.div>
@@ -55,7 +55,7 @@ export const Carousel = () => {
                 style={{ display: button ? "none" : "flex" }}
             >
                 <a className="neon-button" href={`https://brian432.github.io/${imagen}`} target="_blank" rel="noopener noreferrer">Proyecto</a>
-                <a className="neon-button" href={`https://github.com/brian432/${imagen}`} target="_blank" rel="noopener noreferrer">Codigo</a>
+                <a className="neon-button" href={`https://github.com/brian432/${imagen}`} target="_blank" rel="noopener noreferrer">Código</a>
             </div>
         </motion.div>
     )
