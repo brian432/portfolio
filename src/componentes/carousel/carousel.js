@@ -7,6 +7,8 @@ import { useContext } from "react"
 import { CarouselContext } from "../../context/carouselContext"
 import { useResize } from "../../hooks/useResize"
 
+import { enlaces } from "../../utils/enlaces"
+
 export const Carousel = () => {
     const { button, imagen, imageRotation } = useContext(CarouselContext)
     const { isTablet, isPhone } = useResize()

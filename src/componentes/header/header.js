@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { variants_header } from "../../utils/variants-framer-motion/variants";
 import { RouteChangeContext } from "../../context/routeChangeContext";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 export const Header = () => {
     const [menu, setMenu] = useState("");

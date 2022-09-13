@@ -28,7 +28,7 @@ export const Redes = () => {
                                 variants={item_redes}
                                 data-text="[]"
                             >
-                                <a href={elem} target="blank" >
+                                <a href={elem} target="_blank" rel="noopener noreferrer">
                                     <i className={`fab ${icons[index]}`} />
                                 </a>
 
