@@ -5,7 +5,7 @@ export const About = () => {
     return (
         <div className='container'>
             <motion.div
-                style={{ backgroundImage: "url(/imagenes/avatar.png)" }}
+                style={{ backgroundImage: "url(images/avatar.png)" }}
                 className='glitch-img'
                 {...variants_about_img}
             >

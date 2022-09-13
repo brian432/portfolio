@@ -19,7 +19,7 @@ export const Carousel = () => {
             <div
                 className='glitch-img div-absolute'
                 style={{
-                    backgroundImage: `url(/images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)`,
+                    backgroundImage: `url(images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)`,
                     display: button ? "none" : "block"
                 }}
             >
@@ -44,7 +44,7 @@ export const Carousel = () => {
                                 delay: imageRotation === "" ? 0 : `0.${img}`
                             }
                         }}
-                        style={{ backgroundImage: `url(/images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)` }}
+                        style={{ backgroundImage: `url(images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)` }}
                         className={`img${index} div-absolute`}
                     >
                     </motion.div>
