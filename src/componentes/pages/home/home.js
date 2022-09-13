@@ -11,7 +11,7 @@ export const Home = () => {
             <Smoke />
             <div className="home hero-container">
                 <div className='container-name'>
-                    <div >
+                    <div>
                         {
                             nombre.map((text, i) =>
                                 <motion.h2
