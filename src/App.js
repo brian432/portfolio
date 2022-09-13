@@ -7,6 +7,7 @@ import { Redes } from './componentes/redes/redes'
 import { Home } from './componentes/pages/home/home'
 import { About } from './componentes/pages/about/about'
 import { Work } from './componentes/pages/work/work'
+import { Box } from './componentes/mouse-pointer/mouse-pointer'
 
 import { AnimatePresence } from 'framer-motion'
 import { CarouselProvider } from './context/carouselContext'
@@ -20,6 +21,7 @@ function App() {
       <RouteChangeProvider>
         <Header />
         <Redes />
+        <Box />
       </RouteChangeProvider>
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>

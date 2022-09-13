@@ -1,0 +1,47 @@
+.circle {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    z-index: 110;
+    filter: url(#wavy) blur(1px);
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 1px #0f0, inset 0 0 5px #0f0;
+        animation: animate 5s linear infinite;
+    }
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 10px #0f0, inset 0 0 10px #0f0;
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        box-shadow: 0 0 16px #0f0, inset 0 0 16px #0f0;
+    }
+    40% {
+        box-shadow: 0 0 10px #0f0, inset 0 0 10px #0f0;
+    }
+    60% {
+        box-shadow: 0 0 20px #0f0, inset 0 0 20px #0f0;
+    }
+    80% {
+        box-shadow: 0 0 24px #0f0, inset 0 0 24px #0f0;
+    }
+    100% {
+        box-shadow: 0 0 12px #0f0, inset 0 0 12px #0f0;
+        filter: hue-rotate(360deg);
+    }
+}
+
+svg {
+    width: 0;
+    height: 0;
+}
