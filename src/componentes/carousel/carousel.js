@@ -7,10 +7,8 @@ import { useContext } from "react"
 import { CarouselContext } from "../../context/carouselContext"
 import { useResize } from "../../hooks/useResize"
 
-import { enlaces } from "../../utils/enlaces"
-
 export const Carousel = () => {
-    const { button, imagen, imageRotation } = useContext(CarouselContext)
+    const { button, imagen, imageRotation, numero } = useContext(CarouselContext)
     const { isTablet, isPhone } = useResize()
 
     return (
@@ -56,8 +54,8 @@ export const Carousel = () => {
                 className="div-buttons"
                 style={{ display: button ? "none" : "flex" }}
             >
-                <a className="neon-button">Proyecto</a>
-                <a className="neon-button">Codigo</a>
+                <a className="neon-button" href={`https://brian432.github.io/${imagen}`} target="_blank" rel="noopener noreferrer">Proyecto</a>
+                <a className="neon-button" href={`https://github.com/brian432/${imagen}`} target="_blank" rel="noopener noreferrer">Codigo</a>
             </div>
         </motion.div>
     )
