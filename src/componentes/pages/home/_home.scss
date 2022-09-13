@@ -1,0 +1,47 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    flex-direction: column;
+    background-image: url(../../public/images/fondo.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    h1,
+    h2 {
+        margin: 0;
+    }
+}
+p {
+    font-size: 1rem !important;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 1rem;
+    display: flex;
+}
+
+p span {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #ccc;
+}
+
+@media screen and (max-width:768px) {
+    .home{
+        padding: $global_padding_tablet;
+    }
+}

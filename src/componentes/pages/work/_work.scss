@@ -1,0 +1,41 @@
+@import '../../carousel/carousel';
+
+.container-portafolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .div-img {
+        width: 50%;
+    }
+    .portfolio {
+        color: rgba(255, 255, 255, 0.237);
+        font-size: clamp(2rem, 8vw, 6rem);
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .container-portafolio {
+        flex-direction: column;
+        .div-img {
+            position: relative;
+            bottom: -100px;
+            width: 100%;
+            text-align: center;
+            z-index: 99;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-portafolio {
+        padding: $global-padding-tablet;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .div-img {
+        bottom: 0 !important;
+    }
+}

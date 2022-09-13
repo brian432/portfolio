@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+//variable globales en escritorio
+$color-texto: white;
+$global-padding: 2rem 3rem;
+
+//variables globales en mediaquery 768px
+$global-padding-tablet: 1.5rem 1.5rem;
+
+//variables globales en mediaquery 426px
+$global-paddig-mobile: 1rem 1rem;
+
+//Efecto neon para botones
+
+$clr-neon: rgb(42, 182, 199);
+$clr-bg: rgb(48, 32, 43);
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+//Glitch efect
+@import "./glitch/glitch";
+
+@import "../componentes/header/header";
+@import "../componentes/redes/redes";
+@import "../componentes/pages/home/home";
+@import "../componentes/pages/about/about";
+@import "../componentes/pages/work/work";
+@import "../componentes/smoke/smoke";

@@ -1,0 +1,173 @@
+.div-carousel {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    .glitch-img {
+        border-radius: 50% !important;
+        background-color: black;
+        z-index: 98;
+        &::before,
+        &::after,
+        .channel {
+            background-image: inherit !important;
+            border: transparent;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid transparent;
+        }
+    }
+    .div-absolute {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .img0 {
+        border-radius: 50%;
+        width: 33.3%;
+        height: 33.3%;
+        z-index: 9;
+    }
+    .img1 {
+        border-radius: 50%;
+        width: 66.6%;
+        height: 66.6%;
+        z-index: 8;
+    }
+    .img2 {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+    }
+}
+#previus,
+#next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99999999;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer !important;
+}
+#previus {
+    left: 0;
+}
+#next {
+    right: 0;
+}
+.div-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    position: absolute;
+    bottom: 100px;
+    z-index: 99;
+    .neon-button {
+        font-size: 1rem;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        color: $clr-neon;
+        border: $clr-neon 0.125em solid;
+        padding: 0.25em 1em;
+        border-radius: 0.25em;
+
+        text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em currentColor;
+
+        box-shadow: inset 0 0 0.5em 0 $clr-neon, 0 0 0.5em 0 $clr-neon;
+
+        position: relative;
+        &::before {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            background: $clr-neon;
+            top: 120%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+            filter: blur(1em);
+            opacity: 0.3;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 2em 0.5em $clr-neon;
+            opacity: 0;
+            background-color: $clr-neon;
+            z-index: -1;
+            transition: opacity 100ms linear;
+        }
+        &:hover {
+            color: $clr-bg;
+            text-shadow: none;
+        }
+        &:hover::before {
+            opacity: .8;
+        }
+        &:hover::after {
+            opacity: .8;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .div-carousel {
+        bottom: -50px;
+    }
+    .div-buttons {
+        bottom: 80px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .div-carousel {
+        width: 500px !important;
+        height: 500px !important;
+    }
+    .div-buttons {
+        bottom: 80px;
+        .neon-button {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .div-carousel {
+        width: 300px !important;
+        height: 300px !important;
+        bottom: 0;
+    }
+    #previus,
+    #next {
+        font-size: 1.5rem;
+    }
+    .div-buttons {
+        bottom: 40px;
+        gap: 5rem;
+    }
+}
