@@ -8,7 +8,7 @@ import { CarouselContext } from "../../context/carouselContext"
 import { useResize } from "../../hooks/useResize"
 
 export const Carousel = () => {
-    const { button, imagen, imageRotation, numero } = useContext(CarouselContext)
+    const { button, imagen, imageRotation } = useContext(CarouselContext)
     const { isTablet, isPhone } = useResize()
 
     return (
