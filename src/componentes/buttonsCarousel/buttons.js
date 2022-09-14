@@ -11,7 +11,7 @@ export const Buttons = () => {
     const atributos = {
         onClick: handleOnClick,
         style: {
-            color: imagen === "goScrum" ? "black" : "white"
+            color: imagen === "goscrum" ? "black" : "white"
         }
     }
     return (
