@@ -41,7 +41,7 @@ export const Header = () => {
                                 <li key={link} onClick={handleMenuLink}
                                     style={
                                         menu === "" ?
-                                            {} :
+                                            {}:
                                             { "animation": `navLinkFade 0.5s ease forwards ${index / 7 + .2}s` }
                                     }
                                 >
