@@ -19,7 +19,7 @@ export const Carousel = () => {
             <div
                 className='glitch-img div-absolute'
                 style={{
-                    backgroundImage: `url(images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.jpg)`,
+                    backgroundImage: `url(images/${isPhone ? imagen + "-phone" : isTablet ? imagen + "-tablet" : imagen}.webp)`,
                     display: button ? "none" : "block"
                 }}
             >
