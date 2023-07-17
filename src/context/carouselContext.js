@@ -4,7 +4,7 @@ export const CarouselContext = createContext()
 
 export const CarouselProvider = ({children}) => {
     //Estados que actualizan la imagen dentro del carousel
-    const imagenes = ["ecommerce-shoes", "movies-and-series", "Nasa-App", "portfolio"]
+    const imagenes = ["ecommerce-shoes", "cine-y-series", "Nasa-App", "portfolio"]
     const [numero, setNumero] = useState(0)
     const [imagen, setImagen] = useState(imagenes[numero])
 
