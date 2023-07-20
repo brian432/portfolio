@@ -54,7 +54,7 @@ export const Carousel = () => {
                 className="div-buttons"
                 style={{ display: button ? "none" : "flex" }}
             >
-                <a className="neon-button" href={imagen === "ecommerce-shoes"? "https://shoes-brian432.onrender.com/": imagen === 'cine-y-series'?'https://cine-y-series.netlify.app/':`https://brian432.github.io/${imagen}`} target="_blank" rel="noopener noreferrer">Proyecto</a>
+                <a className="neon-button" href={imagen === "ecommerce-shoes"? "https://brian432-ecommerce.onrender.com/": imagen === 'cine-y-series'?'https://cine-y-series.netlify.app/':`https://brian432.github.io/${imagen}`} target="_blank" rel="noopener noreferrer">Proyecto</a>
                 <a className="neon-button" href={`https://github.com/brian432/${imagen}`} target="_blank" rel="noopener noreferrer">Código</a>
             </div>
         </motion.div>
